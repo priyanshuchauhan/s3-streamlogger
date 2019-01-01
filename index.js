@@ -39,6 +39,9 @@ function S3StreamLogger(options){
     if(options.secret_access_key) {
       options.config.secretAccessKey = options.secret_access_key;
     }
+    if(options.region) {
+      options.config.region = options.region;
+    }
     if(options.config.sslEnabled === undefined) {
       options.config.sslEnabled = true;
     }
